@@ -2,10 +2,12 @@
 a breakdown of how to wire an ender 3 v1 screen to an arduino uno using u8g2
 
 // U8g2 Constructor (adjust for your specific display)
+
 U8G2_ST7920_128X64_F_SW_SPI u8g2(U8G2_R0, 10, 13, 11); // Adjust pins to your display configuration
 
 
 //rotary inputs
+
   u8g2.begin(/*Select=*/ 7, /*Right/Next=*/ A1, /*Left/Prev=*/ A2, /*Up=*/ 9, /*Down=*/ 8, /*Home/Cancel=*/ 1); 
 
 
